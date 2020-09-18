@@ -30,7 +30,7 @@ func main() {
 	survey.AskOne(prompt, &selectedsvc, nil)
 	fmt.Println(selectedsvc)
 	svc := iam.New(sess)
-	input1 := &iam.ListUsersInput{MaxItems: aws.Int64(5)}
+	input1 := &iam.ListUsersInput{MaxItems: aws.Int64(400)}
 	result1, err := svc.ListUsers(input1)
 	if err != nil {
 		fmt.Println(err.Error())
