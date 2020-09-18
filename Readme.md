@@ -10,4 +10,19 @@ It analyses an aws service and lists all users, roles, gtoups or policies that h
 
 ### Credentials
 
-This tool looks for AWS credential in obvious places like environment variables, .aws folder etc.. These credentials should have permissions to get a list of IAM entities( users, roles, policies).
+This tool looks for AWS credential in obvious places like environment variables, .aws folder etc. These credentials should have permissions to get a list of IAM entities( users, roles, policies).
+
+### Get it
+
+For Linux
+```
+wget https://github.com/bit-cloner/iam-spy/releases/download/0.9/iam-spy
+chmod +x ./iam-spy
+./iam-spy
+
+```
+One Liner
+
+```
+wget https://github.com/bit-cloner/iam-spy/releases/download/0.9/iam-spy && sudo chmod +x ./iam-spy && ./iam-spy
+```
